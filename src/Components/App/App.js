@@ -18,7 +18,7 @@ class App extends React.Component {
                 },
                 {   
                     id: '2',
-                    name: "Title1",
+                    name: 'Title1',
                     artist: 'Artist1',
                     album: 'Album1'
                 },
@@ -41,7 +41,7 @@ class App extends React.Component {
                      <SearchBar />
                     <div className="App-playlist">
                         <SearchResults searchResults={this.state.searchResults}/>
-                         <Playlist />
+                         <Playlist tracks={this.state.searchResults}/>
                 </div>
                 </div>
             </div >
